@@ -1,4 +1,4 @@
-import { Box, Typography, Stack, Avatar } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 export const AboutMe = () => {

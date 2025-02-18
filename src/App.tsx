@@ -4,7 +4,6 @@ import { lightTheme, darkTheme } from "./theme";
 import { useState, useMemo } from "react";
 import { Journey } from "./components/layout/home/components/Journey";
 import { AboutMe } from "./components/layout/home/components/AboutMe";
-import { AlsoKnownAs } from "./components/layout/home/components/AlsoKnownAs";
 import { Welcome } from "./components/layout/home/components/Welcome";
 import { Counts } from "./components/layout/home/components/Counts";
 import { Contributions } from "./components/layout/home/components/Contributions";
@@ -54,7 +53,6 @@ function App() {
         <Journey />
         <Counts ref={componentRef} />
         <Contributions />
-        {/* <AlsoKnownAs />*/}
 
         <Portfolio />
         <SocialMedia />
