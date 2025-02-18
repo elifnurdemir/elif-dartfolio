@@ -1,6 +1,8 @@
 import { Box } from "@mui/material";
 import { ReactNode } from "react";
-
+import withoutNotch from "../../assets/withoutNotch.png";
+import withNotch from "../../assets/withNotch.png";
+import cuteElif from "../../assets/CuteElif.png";
 type Props = {
   children: ReactNode;
 };
@@ -10,7 +12,7 @@ export const SocialMediaPhone = ({ children }: Props) => {
     <Box //PHONE
       sx={{
         position: "absolute",
-        backgroundImage: "url('withoutNotch.png')",
+        backgroundImage: `url(${withoutNotch})`,
         width: "583px",
         height: "899px",
         padding: "32px 246px 300px 70px",
@@ -22,7 +24,7 @@ export const SocialMediaPhone = ({ children }: Props) => {
       <Box //Notch
         sx={{
           position: "absolute",
-          backgroundImage: "url('withNotch.png')",
+          backgroundImage: `url(${withNotch})`,
           borderBottomRightRadius: "95px",
           width: "583px",
           height: "899px",
@@ -34,8 +36,7 @@ export const SocialMediaPhone = ({ children }: Props) => {
       />
       <Box //SCREEN
         sx={{
-          background:
-            "linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('CuteElif.png')",
+          background: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(${cuteElif})`,
           backgroundColor: "black",
 
           backgroundSize: "cover",

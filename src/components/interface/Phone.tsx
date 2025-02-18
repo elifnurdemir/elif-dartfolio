@@ -1,7 +1,11 @@
 import { Stack, Avatar } from "@mui/material";
 import { motion } from "framer-motion";
 import { useTheme } from "@mui/material/styles";
-
+import PhoneImg from "../../assets/Phone.png";
+import flutter from "../../assets/flutter.svg";
+import kotlin from "../../assets/kotlin.svg";
+import swift from "../../assets/swift.svg";
+import cuteProfile from "../../assets/CuteProfile.png";
 export const Phone = () => {
   const theme = useTheme();
   return (
@@ -11,7 +15,7 @@ export const Phone = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
       sx={{
-        backgroundImage: `url("/Phone.png")`,
+        backgroundImage: `url(${PhoneImg})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "contain",
         height: "775px",
@@ -29,7 +33,7 @@ export const Phone = () => {
     >
       <Avatar
         alt="Elifnur Demir"
-        src="/CuteProfile.png"
+        src={cuteProfile}
         sx={{
           width: 164,
           height: 164,
@@ -47,7 +51,7 @@ export const Phone = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           height={"64px"}
-          src="/flutter.svg"
+          src={flutter}
           style={{ cursor: "pointer" }}
         />
         <motion.img
@@ -55,7 +59,7 @@ export const Phone = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           height={"64px"}
-          src="/swift.svg"
+          src={swift}
           style={{ cursor: "pointer" }}
         />
         <motion.img
@@ -63,7 +67,7 @@ export const Phone = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
           height={"64px"}
-          src="/kotlin.svg"
+          src={kotlin}
           style={{ cursor: "pointer" }}
         />
       </Stack>

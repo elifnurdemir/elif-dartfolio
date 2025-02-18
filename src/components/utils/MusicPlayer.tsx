@@ -8,25 +8,30 @@ import {
   Grid2,
 } from "@mui/material";
 import { PlayArrow, Pause, SkipNext, SkipPrevious } from "@mui/icons-material";
-
+import BillieMp3 from "../../assets/music/Billie Eilish - TV.mp3";
+import BillieImg from "../../assets/music/Billie Eilish - TV.mp3";
+import PowerwolfMp3 from "../../assets/music/Powerwolf - Army of the Night.mp3";
+import PowerwofImg from "../../assets/music/Powerwolf - Army of the Night.jpg";
+import ShouseMp3 from "../../assets/music/Shouse - Love Tonight.mp3";
+import ShouseImg from "../../assets/music/Shouse - Love Tonight.png";
 const songs = [
   {
     title: "Army of the Night",
     artist: "Powerwolf",
-    src: "/music/Powerwolf - Army of the Night.mp3",
-    album: "/music/Powerwolf - Army of the Night.jpg",
+    src: PowerwolfMp3,
+    album: PowerwofImg,
   },
   {
     title: "Love Tonight",
     artist: "Shouse",
-    src: "/music/Shouse - Love Tonight.mp3",
-    album: "/music/Shouse - Love Tonight.png",
+    src: ShouseMp3,
+    album: ShouseImg,
   },
   {
     title: "TV",
     artist: "Billie Eilish",
-    src: "/music/Billie Eilish - TV.mp3",
-    album: "/music/Billie Eilish - TV.jpg",
+    src: BillieMp3,
+    album: BillieImg,
   },
 ];
 

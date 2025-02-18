@@ -14,7 +14,8 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { BrightnessHigh, DarkMode } from "@mui/icons-material";
 import { useTheme } from "@mui/material";
-
+import CuteProfile from "../../../../assets/CuteProfile.png";
+import logo from "../../../../assets/logo.png";
 const pages = ["Home", "About Me", "Portfolio"];
 
 interface ResponsiveAppBarProps {
@@ -59,7 +60,7 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img
-            src={"/logo.png"}
+            src={logo}
             height={"46px"}
             width={"46px"}
             style={{
@@ -168,7 +169,7 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
               <IconButton sx={{ p: 0 }}>
                 <Avatar
                   alt="Elifnur Demir"
-                  src="/CuteProfile.png"
+                  src={CuteProfile}
                   sx={{
                     backgroundColor: "white",
                   }}
