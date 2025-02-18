@@ -1,0 +1,72 @@
+import { Stack, Avatar } from "@mui/material";
+import { motion } from "framer-motion";
+import { useTheme } from "@mui/material/styles";
+
+export const Phone = () => {
+  const theme = useTheme();
+  return (
+    <Stack
+      component={motion.div}
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+      sx={{
+        backgroundImage: `url("/Phone.png")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain",
+        height: "775px",
+        width: "389px",
+        overflow: "hidden",
+        position: "absolute",
+        ml: 20,
+        top: "450px",
+        filter: "drop-shadow(-70px 0px 30px rgba(0, 0, 0, 0.5))",
+      }}
+      direction={"column"}
+      alignItems={"center"}
+      pt={15}
+      gap={5}
+    >
+      <Avatar
+        alt="Elifnur Demir"
+        src="/CuteProfile.png"
+        sx={{
+          width: 164,
+          height: 164,
+          border: `5px solid ${theme.palette.primary.main}`,
+        }}
+      />
+      <Stack
+        direction={"row"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        gap={2}
+      >
+        <motion.img
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          height={"64px"}
+          src="/flutter.svg"
+          style={{ cursor: "pointer" }}
+        />
+        <motion.img
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          height={"64px"}
+          src="/swift.svg"
+          style={{ cursor: "pointer" }}
+        />
+        <motion.img
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          height={"64px"}
+          src="/kotlin.svg"
+          style={{ cursor: "pointer" }}
+        />
+      </Stack>
+    </Stack>
+  );
+};
