@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { PlayArrow, Pause, SkipNext, SkipPrevious } from "@mui/icons-material";
 import BillieMp3 from "../../assets/music/Billie Eilish - TV.mp3";
-import BillieImg from "../../assets/music/Billie Eilish - TV.mp3";
+import BillieImg from "../../assets/music/Billie Eilish - TV.jpg";
 import PowerwolfMp3 from "../../assets/music/Powerwolf - Army of the Night.mp3";
 import PowerwofImg from "../../assets/music/Powerwolf - Army of the Night.jpg";
 import ShouseMp3 from "../../assets/music/Shouse - Love Tonight.mp3";
