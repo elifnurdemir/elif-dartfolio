@@ -51,31 +51,34 @@ export const Footer = () => {
       alignItems="stretch"
       position="relative"
       justifyContent="space-between"
-      px="5vw"
-      pb="5vw"
-      sx={{ backgroundColor: "black" }}
+      sx={{
+        backgroundColor: "black",
+        flexDirection: { xs: "column", sm: "row" },
+      }} // Responsive direction
     >
       <Box flex={1}>
-        <Box
-          mb="5vw"
-          height="100px"
-          sx={{
-            backgroundColor: theme.palette.background.default,
-            borderBottomRightRadius: "100px",
-            borderBottomLeftRadius: "100px",
-          }}
-        />
-        <Stack direction="column" alignItems="center" justifyContent="center">
+        <Stack
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          px={2}
+        >
           <Typography
             variant="h1"
             color={theme.palette.text.secondary}
             gutterBottom
+            sx={{ fontSize: { xs: "2rem", sm: "3rem" } }} // Responsive font size
           >
             {buttonText === "Yey! I Received Your Message"
               ? "Yey! I Received Your Message"
               : "Let's Connect!"}
           </Typography>
-          <Typography variant="h5" color={theme.palette.text.secondary} mb={10}>
+          <Typography
+            variant="h5"
+            color={theme.palette.text.secondary}
+            mb={10}
+            sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }} // Responsive font size
+          >
             Got an idea, feedback, or just want to chat? Drop me a message!
           </Typography>
           <Stack direction="column" alignItems="center">
@@ -85,6 +88,8 @@ export const Footer = () => {
                 borderRadius: "32px",
                 fontSize: "32px",
                 padding: "16px",
+                width: "100%", // Ensures input is full width
+                maxWidth: "550px", // Limits input width
               }}
             >
               <input
@@ -97,6 +102,7 @@ export const Footer = () => {
                   fontSize: "32px",
                   border: "none",
                   outline: "none",
+                  width: "100%", // Make input responsive
                 }}
                 onChange={handleChange}
                 value={formData.email}
@@ -107,6 +113,7 @@ export const Footer = () => {
                 overflow: "hidden",
                 maxHeight: isEmailFilled ? "500px" : "0px",
                 transition: "max-height 0.3s ease-in-out",
+                width: "100%",
               }}
             >
               <Stack
@@ -116,7 +123,11 @@ export const Footer = () => {
                 my={5}
                 gap={3}
               >
-                <Typography variant="h5" color={theme.palette.text.secondary}>
+                <Typography
+                  variant="h5"
+                  color={theme.palette.text.secondary}
+                  sx={{ fontSize: { xs: "1.25rem", sm: "1.5rem" } }} // Responsive font size
+                >
                   You can leave your message here
                 </Typography>
                 <ArrowDownward
@@ -135,8 +146,9 @@ export const Footer = () => {
                     borderRadius: "32px",
                     padding: "24px",
                     outline: "none",
-                    width: "550px",
-                    height: "100%",
+                    width: "100%", // Make textarea responsive
+                    maxWidth: "550px", // Limits textarea width
+                    height: "150px", // Restrict height
                     marginBottom: 64,
                     resize: "none",
                   }}
@@ -147,13 +159,19 @@ export const Footer = () => {
                   variant="contained"
                   sx={{
                     borderRadius: "64px",
-                    width: "550px",
+                    width: "100%", // Make button responsive
+                    maxWidth: "550px", // Limits button width
                     p: 2,
                     backgroundColor: theme.palette.secondary.main,
                   }}
                   onClick={handleSubmit}
                 >
-                  <Typography variant="h4">{buttonText}</Typography>
+                  <Typography
+                    variant="h4"
+                    sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }}
+                  >
+                    {buttonText}
+                  </Typography>
                 </Button>
               </Stack>
             </Box>

@@ -22,6 +22,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
     <Grid2
       container
       component={motion.div}
+      spacing={5}
       whileInView={{ opacity: 1, y: 0 }} // Göründüğünde animasyonu başlat
       initial={{ opacity: 0, y: 50 }} // Başlangıçta görünmez ve alttan gelir
       transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -34,7 +35,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
           justifyContent="right"
           textAlign="right"
         >
-          <Typography variant="h3">{date}</Typography>
+          <Typography variant="h4">{date}</Typography>
         </Grid2>
       ) : (
         <Grid2
@@ -71,7 +72,7 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
             {children}
           </Grid2>
         ) : (
-          <Typography variant="h3">{date}</Typography>
+          <Typography variant="h4">{date}</Typography>
         )}
       </Grid2>
     </Grid2>

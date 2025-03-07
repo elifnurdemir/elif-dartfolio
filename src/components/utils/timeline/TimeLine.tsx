@@ -16,7 +16,7 @@ type TimeLineProps = {
 
 export const TimeLine: React.FC<TimeLineProps> = ({ items, lineheight }) => {
   return (
-    <Grid2 container paddingX={"20px"}>
+    <Grid2 container>
       {items.map((item, index) => (
         <Grid2 size={12} key={index}>
           <TimelineItem

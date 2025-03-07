@@ -15,7 +15,7 @@ export const myTimeline: {
     content: (
       <Box>
         <Typography variant="h4">Completed Frontend Bootcamp</Typography>
-        <Typography variant="h6">React, JavaScript, HTML, CSS</Typography>
+        <Typography variant="body1">React, JavaScript, HTML, CSS</Typography>
       </Box>
     ),
     position: "right",
@@ -25,7 +25,7 @@ export const myTimeline: {
     content: (
       <Box>
         <Typography variant="h4">Mobile Development Journey</Typography>
-        <Typography variant="h6">
+        <Typography variant="body1">
           Started learning React Native & Flutter
         </Typography>
       </Box>
@@ -37,9 +37,9 @@ export const myTimeline: {
     content: (
       <Box>
         <Typography variant="h4">
-          Earned Google Associate Android Developer Certificate
+          Google Associate Android Developer Certificate
         </Typography>
-        <Typography variant="h6">
+        <Typography variant="body1">
           Validated skills in Android app development
         </Typography>
       </Box>
@@ -53,7 +53,7 @@ export const myTimeline: {
         <Typography variant="h4">
           Completed Full-Stack Developer Course
         </Typography>
-        <Typography variant="h6">Backend with Node.js & Express</Typography>
+        <Typography variant="body1">Backend with Node.js & Express</Typography>
       </Box>
     ),
     position: "left",
@@ -63,7 +63,7 @@ export const myTimeline: {
     content: (
       <Box>
         <Typography variant="h4">Achieved AWS Certified Developer</Typography>
-        <Typography variant="h6">
+        <Typography variant="body1">
           Cloud computing & serverless applications
         </Typography>
       </Box>

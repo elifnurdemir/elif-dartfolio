@@ -18,18 +18,28 @@ export const Contributions = () => {
       }}
     >
       <Stack direction={"column"} alignItems={"center"} pt={20}>
-        <Typography variant="h1" color={theme.palette.primary.main}>
+        <Typography
+          variant="h1"
+          color={theme.palette.primary.main}
+          sx={{ fontSize: { xs: "2rem", sm: "3rem" } }}
+        >
           Contributions
         </Typography>
         <Box
-          sx={{ backgroundColor: theme.palette.secondary.main }}
-          padding={3}
-          borderRadius={10}
+          sx={{
+            backgroundColor: theme.palette.secondary.main,
+            padding: { xs: 2, sm: 3 }, // Responsive padding
+            borderRadius: 10,
+            width: { xs: "90%", sm: "auto" }, // Mobile uyumlu genişlik
+            maxWidth: "90%",
+          }}
         >
           <Box
-            sx={{ backgroundColor: theme.palette.background.default }}
-            padding={3}
-            borderRadius={5}
+            sx={{
+              backgroundColor: theme.palette.background.default,
+              padding: { xs: 2, sm: 3 }, // Responsive padding
+              borderRadius: 5,
+            }}
           >
             <GitHubCalendar
               colorScheme={theme.palette.mode}

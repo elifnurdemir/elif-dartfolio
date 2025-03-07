@@ -16,6 +16,7 @@ import { BrightnessHigh, DarkMode } from "@mui/icons-material";
 import { useTheme } from "@mui/material";
 import CuteProfile from "../../../../assets/CuteProfile.png";
 import logo from "../../../../assets/logo.png";
+
 const pages = ["Home", "About Me", "Portfolio"];
 
 interface ResponsiveAppBarProps {
@@ -43,9 +44,17 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
     setAnchorElNav(null);
   };
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   React.useEffect(() => {
     console.log(scrolled);
   }, [scrolled]);
+
   return (
     <AppBar
       position="sticky"
@@ -116,7 +125,12 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  onClick={() =>
+                    scrollToSection(page.toLowerCase().replace(" ", "-"))
+                  }
+                >
                   <Typography sx={{ textAlign: "center" }}>{page}</Typography>
                 </MenuItem>
               ))}
@@ -145,7 +159,9 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() =>
+                  scrollToSection(page.toLowerCase().replace(" ", "-"))
+                }
                 sx={{
                   my: 2,
                   color: "white",

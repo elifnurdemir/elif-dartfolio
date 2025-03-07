@@ -100,193 +100,187 @@ export const SocialMedia = () => {
   const minutes = currentDate.getMinutes();
 
   return (
-    <Stack
-      direction={"row"}
-      alignItems={"stretch"}
-      position={"relative"}
+    <Grid2
+      pt={5}
+      pl={5}
+      container
       justifyContent={"space-between"}
       ref={sliderRef}
-      sx={{ height: "100%" }}
     >
-      <Box
-        width={"5vw"}
-        minHeight={"100px"}
-        sx={{ backgroundColor: "black", borderTopRightRadius: "50px" }}
-      />
-      <Box
+      <Grid2
+        size={{ xs: 12, sm: 6 }}
+        component={Stack}
         sx={{
           backgroundColor: theme.palette.background.default,
-          height: "800px",
-          padding: 20,
         }}
-        flex={1}
       >
-        <Typography variant="h1">Here is My Accounts</Typography>
-        <Typography variant="h2">Follow Me! 😍</Typography>
-      </Box>
-      <SocialMediaPhone>
-        <Stack
-          direction={"row"}
-          alignItems={"center"}
-          justifyContent={"space-between"}
-          sx={{ height: "20px", px: "14px" }}
-        >
+        <Typography variant="h2">Here is My Accounts</Typography>
+        <Typography variant="h3">Follow Me! 😍</Typography>
+      </Grid2>
+      <Grid2
+        size={{ xs: 12, sm: 6 }}
+        component={Stack}
+        justifyContent={"flex-end"}
+        alignItems={"flex-end"}
+      >
+        <SocialMediaPhone>
           <Stack
             direction={"row"}
             alignItems={"center"}
-            justifyContent={"center"}
+            justifyContent={"space-between"}
+            sx={{ height: "20px", px: "14px" }}
           >
-            <Typography sx={{ fontSize: 12 }} color="white">
-              {hours}:{minutes}
-            </Typography>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              justifyContent={"center"}
+            >
+              <Typography sx={{ fontSize: 12 }} color="white">
+                {hours}:{minutes}
+              </Typography>
+            </Stack>
+            <Stack
+              direction={"row"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              spacing={0.3}
+            >
+              <SignalCellular3Bar sx={{ color: "white", fontSize: 14 }} />
+              <SignalWifi3Bar sx={{ color: "white", fontSize: 14 }} />
+              <BatteryChargingFull sx={{ color: "white", fontSize: 14 }} />
+            </Stack>
           </Stack>
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={1}
+            pagination={pagination}
+            modules={[Pagination]}
+          >
+            <SwiperSlide style={{ height: "488px", width: "266px" }}>
+              <Grid2 container sx={{ padding: 2 }} spacing={3}>
+                <Grid2 size={12}>
+                  <Stack
+                    direction={"row"}
+                    alignItems={"center"}
+                    justifyContent={"center"}
+                    sx={{
+                      backgroundColor: "white",
+                      height: "36px",
+                      borderRadius: "100px",
+                    }}
+                  >
+                    <IconButton
+                      onClick={() =>
+                        window.open("https://www.google.com", "_blank")
+                      }
+                    >
+                      <img src={Google} />
+                    </IconButton>
+                    <Box flex={1} />
+                    <IconButton
+                      onClick={() =>
+                        window.open("https://www.google.com", "_blank")
+                      }
+                    >
+                      <img src={GoogleMic} />
+                    </IconButton>
+                  </Stack>
+                </Grid2>
+
+                <SocialMediaButton
+                  label="Behance"
+                  link="https://behance.net/elifnurdemir1"
+                  source={Behance}
+                />
+                <SocialMediaButton label="Dribbble" link="" source={Dribbble} />
+                <SocialMediaButton
+                  label="Github"
+                  link="https://github.com/elifnurdemir"
+                  source={Github}
+                />
+                <SocialMediaButton
+                  label="Medium"
+                  link="https://medium.com/@elifxnur118"
+                  source={Medium}
+                />
+                <SocialMediaButton
+                  label="LinkedIn"
+                  link="https://linkedin.com/in/elifnurdemir-elifnur-demir"
+                  source={LinkedIn}
+                />
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <MusicPlayer />
+              </Grid2>
+            </SwiperSlide>
+            <SwiperSlide
+              style={{
+                height: "488px",
+                width: "266px",
+              }}
+            >
+              <Grid2 container sx={{ padding: 2 }} spacing={3}>
+                <SocialMediaButton
+                  label="Instagram"
+                  link="https://www.instagram.com/ifelselif/"
+                  source={Instagram}
+                />
+                <SocialMediaButton
+                  label="Pinterest"
+                  link="https://pinterest.com/arrivederciao"
+                  source={Pinterest}
+                />
+                <SocialMediaButton
+                  label="Spotify"
+                  link="https://open.spotify.com/user/elifxnur118"
+                  source={Spotify}
+                />
+                <SocialMediaButton
+                  label="Telegram"
+                  link="https://t.me/arrivederciao"
+                  source={Telegram}
+                />
+                <SocialMediaButton
+                  label="YouTube"
+                  link="https://youtube.com/@arrivederciaoo"
+                  source={YouTube}
+                />
+              </Grid2>
+            </SwiperSlide>
+          </Swiper>
           <Stack
             direction={"row"}
             alignItems={"center"}
+            height={"50px"}
             justifyContent={"center"}
-            spacing={0.3}
+            spacing={1}
           >
-            <SignalCellular3Bar sx={{ color: "white", fontSize: 14 }} />
-            <SignalWifi3Bar sx={{ color: "white", fontSize: 14 }} />
-            <BatteryChargingFull sx={{ color: "white", fontSize: 14 }} />
+            <IconButton>
+              <img src={Phone} height={"38px"} />
+            </IconButton>
+            <IconButton
+              onClick={() =>
+                (window.location.href = "mailto:elifdemircontact@gmail.com")
+              }
+            >
+              <img src={Mail} height={"38px"} />
+            </IconButton>
+            <IconButton
+              onClick={() => window.open("https://www.google.com", "_blank")}
+            >
+              <img src={Browser} height={"38px"} alt="Browser" />
+            </IconButton>
+
+            <IconButton>
+              <img src={Camera} height={"38px"} />
+            </IconButton>
           </Stack>
-        </Stack>
-        <Swiper
-          spaceBetween={0}
-          slidesPerView={1}
-          pagination={pagination}
-          modules={[Pagination]}
-        >
-          <SwiperSlide style={{ height: "488px", width: "266px" }}>
-            <Grid2 container sx={{ padding: 2 }} spacing={3}>
-              <Grid2 size={12}>
-                <Stack
-                  direction={"row"}
-                  alignItems={"center"}
-                  justifyContent={"center"}
-                  sx={{
-                    backgroundColor: "white",
-                    height: "36px",
-                    borderRadius: "100px",
-                  }}
-                >
-                  <IconButton
-                    onClick={() =>
-                      window.open("https://www.google.com", "_blank")
-                    }
-                  >
-                    <img src={Google} />
-                  </IconButton>
-                  <Box flex={1} />
-                  <IconButton
-                    onClick={() =>
-                      window.open("https://www.google.com", "_blank")
-                    }
-                  >
-                    <img src={GoogleMic} />
-                  </IconButton>
-                </Stack>
-              </Grid2>
-
-              <SocialMediaButton
-                label="Behance"
-                link="https://behance.net/elifnurdemir1"
-                source={Behance}
-              />
-              <SocialMediaButton label="Dribbble" link="" source={Dribbble} />
-              <SocialMediaButton
-                label="Github"
-                link="https://github.com/elifnurdemir"
-                source={Github}
-              />
-              <SocialMediaButton
-                label="Medium"
-                link="https://medium.com/@elifxnur118"
-                source={Medium}
-              />
-              <SocialMediaButton
-                label="LinkedIn"
-                link="https://linkedin.com/in/elifnurdemir-elifnur-demir"
-                source={LinkedIn}
-              />
-              <Grid2 size={12} sx={{ visibility: "hidden" }}>
-                space
-              </Grid2>
-              <Grid2 size={12} sx={{ visibility: "hidden" }}>
-                space
-              </Grid2>
-              <MusicPlayer />
-            </Grid2>
-          </SwiperSlide>
-          <SwiperSlide
-            style={{
-              height: "488px",
-              width: "266px",
-            }}
-          >
-            <Grid2 container sx={{ padding: 2 }} spacing={3}>
-              <SocialMediaButton
-                label="Instagram"
-                link="https://www.instagram.com/ifelselif/"
-                source={Instagram}
-              />
-              <SocialMediaButton
-                label="Pinterest"
-                link="https://pinterest.com/arrivederciao"
-                source={Pinterest}
-              />
-              <SocialMediaButton
-                label="Spotify"
-                link="https://open.spotify.com/user/elifxnur118"
-                source={Spotify}
-              />
-              <SocialMediaButton
-                label="Telegram"
-                link="https://t.me/arrivederciao"
-                source={Telegram}
-              />
-              <SocialMediaButton
-                label="YouTube"
-                link="https://youtube.com/@arrivederciaoo"
-                source={YouTube}
-              />
-            </Grid2>
-          </SwiperSlide>
-        </Swiper>
-        <Stack
-          direction={"row"}
-          alignItems={"center"}
-          height={"50px"}
-          justifyContent={"center"}
-          spacing={1}
-        >
-          <IconButton>
-            <img src={Phone} height={"38px"} />
-          </IconButton>
-          <IconButton
-            onClick={() =>
-              (window.location.href = "mailto:elifdemircontact@gmail.com")
-            }
-          >
-            <img src={Mail} height={"38px"} />
-          </IconButton>
-          <IconButton
-            onClick={() => window.open("https://www.google.com", "_blank")}
-          >
-            <img src={Browser} height={"38px"} alt="Browser" />
-          </IconButton>
-
-          <IconButton>
-            <img src={Camera} height={"38px"} />
-          </IconButton>
-        </Stack>
-      </SocialMediaPhone>
-
-      <Box
-        width={"5vw"}
-        minHeight={"100px"}
-        sx={{ backgroundColor: "black", borderTopLeftRadius: "50px" }}
-      />
-    </Stack>
+        </SocialMediaPhone>
+      </Grid2>
+    </Grid2>
   );
 };
