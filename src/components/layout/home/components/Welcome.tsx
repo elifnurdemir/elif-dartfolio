@@ -23,7 +23,7 @@ export const Welcome = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
       </Stack>
       <Grid2 container>
         <Grid2
-          size={{ xs: 12, sm: 6 }}
+          size={{ xs: 12, sm: 5 }}
           component={Stack}
           alignItems={"center"}
           justifyContent={"center"}
@@ -56,7 +56,7 @@ export const Welcome = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
           </Stack>
         </Grid2>
         <Grid2
-          size={{ xs: 12, sm: 6 }}
+          size={{ xs: 12, sm: 7 }}
           component={Stack}
           alignItems={"center"}
           justifyContent={"flex-end"}
