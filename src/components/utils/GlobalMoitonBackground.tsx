@@ -1,15 +1,11 @@
 "use client";
 
+import { useTheme } from "@mui/material";
 import { motion, useScroll, useTransform } from "framer-motion";
-
-const transition = { duration: 4, ease: "easeInOut" };
 
 export default function GlobalMotionBackground() {
   const { scrollYProgress } = useScroll();
-
-  // Path uzunluğunu scroll'a bağla
-  const offsetDistance = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-
+  const theme = useTheme();
   // Dash array ve offset kullanarak hareket eden bir efekt oluştur
   const dashOffset = useTransform(scrollYProgress, [0, 1], ["100%", "0%"]);
 
@@ -25,43 +21,32 @@ export default function GlobalMotionBackground() {
       }}
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        {/* Arkadaki Sabit Yol */}
+        {/* Arkadaki Sabit Yol (Başlangıçta Görünmez) */}
         <motion.path
-          d="M 200 0 C 50 100 50 300 200 400 C 350 500 400 700 600 800"
+          d={pathData}
           fill="transparent"
           strokeWidth="8"
-          stroke="gray"
+          stroke="transparent"
           strokeLinecap="round"
-          initial={{ pathLength: 1 }}
+          opacity={0.2} // Hafif görünür hale getirdik
         />
 
         {/* Üzerinden Geçtiği Yol */}
         <motion.path
-          d="M 200 0 C 50 100 50 300 200 400 C 350 500 400 700 600 800"
+          d={pathData}
           fill="transparent"
-          strokeWidth="8"
-          stroke="var(--hue-6-transparent)" // Hareket eden yolun rengi
+          strokeWidth="50"
+          stroke={theme.palette.primary.main} // Hareket eden yolun rengi
           strokeLinecap="round"
           strokeDasharray="100%" // Kesik çizgiyi tam bir hat olarak ayarla
           style={{ strokeDashoffset: dashOffset }}
         />
       </svg>
-
-      {/* Hareket Eden Kutu */}
-      <motion.div
-        style={{
-          width: 50,
-          height: 50,
-          backgroundColor: "#4ff0b7",
-          borderRadius: 10,
-          position: "absolute",
-          top: 0,
-          left: 0,
-          offsetPath: `path("M 200 0 C 50 100 50 300 200 400 C 350 500 400 700 600 800")`,
-          offsetDistance,
-        }}
-        transition={transition}
-      />
     </div>
   );
 }
+
+/**
+ * ==============   Path Verisi   ================
+ */
+const pathData = `M 200 0 C 50 100 50 300 200 400 C 350 500 400 700 600 800`;
