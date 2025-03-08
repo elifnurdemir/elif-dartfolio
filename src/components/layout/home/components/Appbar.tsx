@@ -58,11 +58,11 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
   return (
     <AppBar
       position="sticky"
-      elevation={3}
+      elevation={0}
       sx={{
         backgroundColor: scrolled
-          ? theme.palette.secondary.main
-          : theme.palette.primary.main,
+          ? theme.palette.secondary.main + "33"
+          : theme.palette.primary.main + "33",
         transition: "background-color 0.3s ease", // Adding transition for smooth color change
       }}
     >
