@@ -11,7 +11,6 @@ import React from "react";
 import { Footer } from "./components/layout/home/components/Footer";
 import { KeyboardArrowUp } from "@mui/icons-material";
 import { SocialMedia } from "./components/layout/home/components/SocialMedia";
-import GlobalMotionBackground from "./components/utils/GlobalMoitonBackground";
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [scrolled, setScrolled] = React.useState(false);
@@ -44,7 +43,7 @@ function App() {
       <CssBaseline />
       <Box>
         <Welcome setDarkMode={setDarkMode} darkMode={darkMode} />
-        <GlobalMotionBackground />
+
         <AboutMe />
         <Journey />
         <Counts ref={componentRef} />
