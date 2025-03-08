@@ -41,14 +41,14 @@ export const AboutMe = () => {
           // Centers the text
         }}
       >
-        Hi, I'm a frontend developer who loves building smooth, user-friendly
-        web experiences. Always striving to create intuitive and visually
-        appealing applications.
+       As a passionate software developer, I love crafting innovative solutions across frontend, mobile apps, and UI/UX design. My coding journey began in 2024, and it's been an incredible adventure so far. Currently, I'm pursuing a degree in Computer Programming at Istanbul University, where I'm delving into React, Flutter, and full-stack development.
         <br /> <br />
-        When I'm not coding, you'll find me exploring new design trends,
-        optimizing performance, or experimenting with creative animations. I
-        believe great interfaces tell a story—and I aim to make that story as
-        seamless as possible.
+        My mission is to create applications that are both functional and life-enhancing. Outside of coding, you can find me practicing yoga, exploring design concepts, or engaging with tech communities. Let's collaborate and build something amazing together! 
+
+
+
+
+
       </Typography>
     </Box>
   );
