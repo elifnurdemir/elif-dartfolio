@@ -6,7 +6,6 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import { useRef } from "react";
 import { SocialMediaPhone } from "../../../interface/SocialMediaPhone";
 import { SwiperSlide, Swiper } from "swiper/react";
 import "/node_modules/swiper/swiper.css";
