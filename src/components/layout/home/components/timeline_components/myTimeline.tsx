@@ -8,7 +8,7 @@ export const myTimeline: {
 }[] = [
   {
     content: (
-      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+      <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
         Born! 👶🎂
       </Typography>
     ),
@@ -18,10 +18,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Started Studying Opticianry 👓📖
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "600" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "600" }}
+          maxWidth={"20vw"}
+        >
           Kırklareli University
         </Typography>
       </Box>
@@ -32,10 +36,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Erasmus+ Experience ✈️🌍
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           Explored new cultures and opportunities
         </Typography>
       </Box>
@@ -46,7 +54,7 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Graduated from Opticianry 🎓👀
         </Typography>
       </Box>
@@ -57,10 +65,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Started Studying Computer Programming 💻🚀
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           Istanbul University - Associate Degree
         </Typography>
       </Box>
@@ -71,10 +83,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Earned Cybersecurity Fundamentals Certificate 🔒🛡️
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           IBM & Kodluyoruz
         </Typography>
       </Box>
@@ -85,10 +101,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Completed Agile Project Management Course 📊📅
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           HP LIFE
         </Typography>
       </Box>
@@ -99,10 +119,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Became an Expert in Emerging Tech 🚀🤖
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           IBM Explore Emerging Tech Badge
         </Typography>
       </Box>
@@ -113,10 +137,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Earned CyberStart Certificate 🕵️‍♂️💻
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           IBM & Kodluyoruz
         </Typography>
       </Box>
@@ -127,10 +155,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Mobile App Development Workshop 📱🔥
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           Hi-Kod 2.0
         </Typography>
       </Box>
@@ -141,10 +173,14 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
           Expected Graduation 🎓🎉
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "500" }}
+          maxWidth={"20vw"}
+        >
           Istanbul University - Computer Programming
         </Typography>
       </Box>
