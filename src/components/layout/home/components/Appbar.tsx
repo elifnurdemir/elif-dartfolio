@@ -79,24 +79,8 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
               marginRight: 20,
             }}
           />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Elifnur Demir
-          </Typography>
-
+          {/* Removed Elifnur Demir */}
+          
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -137,24 +121,7 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Elifnur Demir
-          </Typography>
+          {/* Removed Elifnur Demir */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
@@ -164,9 +131,11 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
                 }
                 sx={{
                   my: 2,
-                  color: "white",
+                  color: "#3d3d3d",
                   display: "block",
-                  fontSize: "18px",
+                  fontSize: "30px",
+                  fontWeight:'bold',
+                  marginX: 3, // Added margin for spacing
                 }}
               >
                 {page}
@@ -188,6 +157,8 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
                   src={CuteProfile}
                   sx={{
                     backgroundColor: "white",
+                    width: 50, // Increased the width
+                    height: 50, // Increased the height
                   }}
                 />
               </IconButton>

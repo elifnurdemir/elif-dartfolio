@@ -13,7 +13,7 @@ export const Welcome = () => {
         backgroundSize: "cover",
       }}
     >
-      <Stack direction={"column"} alignItems={"center"} pt={4}>
+      <Stack direction={"column"} alignItems={"center"} pt={6}>
         <Typography variant="h1">Hello, It's Me!</Typography>
       </Stack>
       <Grid2 container>
@@ -29,6 +29,7 @@ export const Welcome = () => {
             gap={4}
             padding={5}
             borderRadius={5}
+            marginTop={20}
             width={"fit-content"}
             sx={{
               backgroundColor: theme.palette.background.default + "dd",

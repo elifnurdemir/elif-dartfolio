@@ -21,7 +21,7 @@ export const Contributions = () => {
         <Typography
           variant="h1"
           color={theme.palette.primary.main}
-          sx={{ fontSize: { xs: "2rem", sm: "3rem" } }}
+          sx={{ fontSize: { xs: "2rem", sm: "5rem" } }}
         >
           Contributions
         </Typography>
@@ -31,7 +31,7 @@ export const Contributions = () => {
             padding: { xs: 2, sm: 3 }, // Responsive padding
             borderRadius: 10,
             width: { xs: "90%", sm: "auto" }, // Mobile uyumlu genişlik
-            maxWidth: "90%",
+            maxWidth: "100%",
           }}
         >
           <Box

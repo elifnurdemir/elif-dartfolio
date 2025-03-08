@@ -40,7 +40,6 @@ export const SocialMediaPhone = ({ children }: Props) => {
             backgroundRepeat: "no-repeat",
             height: "568px",
             width: "266px",
-
             borderRadius: "30px",
           }}
         >

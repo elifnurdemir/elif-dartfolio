@@ -7,15 +7,23 @@ export const myTimeline: {
   date: string;
 }[] = [
   {
-    content: <Typography variant="h4">Started Learning Programming</Typography>,
+    content: (
+      <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+        Started Learning Programming
+      </Typography>
+    ),
     position: "left",
     date: "2024 Ocak",
   },
   {
     content: (
       <Box>
-        <Typography variant="h4">Completed Frontend Bootcamp</Typography>
-        <Typography variant="body1">React, JavaScript, HTML, CSS</Typography>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Completed Frontend Bootcamp
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          React, JavaScript, HTML, CSS
+        </Typography>
       </Box>
     ),
     position: "right",
@@ -24,8 +32,10 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4">Mobile Development Journey</Typography>
-        <Typography variant="body1">
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Mobile Development Journey
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
           Started learning React Native & Flutter
         </Typography>
       </Box>
@@ -36,10 +46,10 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4">
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
           Google Associate Android Developer Certificate
         </Typography>
-        <Typography variant="body1">
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
           Validated skills in Android app development
         </Typography>
       </Box>
@@ -50,10 +60,12 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4">
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
           Completed Full-Stack Developer Course
         </Typography>
-        <Typography variant="body1">Backend with Node.js & Express</Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          Backend with Node.js & Express
+        </Typography>
       </Box>
     ),
     position: "left",
@@ -62,8 +74,10 @@ export const myTimeline: {
   {
     content: (
       <Box>
-        <Typography variant="h4">Achieved AWS Certified Developer</Typography>
-        <Typography variant="body1">
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Achieved AWS Certified Developer
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
           Cloud computing & serverless applications
         </Typography>
       </Box>

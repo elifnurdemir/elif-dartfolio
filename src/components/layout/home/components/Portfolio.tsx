@@ -31,9 +31,6 @@ export const Portfolio = () => {
         width={"100%"}
         p={2}
       >
-        <Typography variant="h1" color={theme.palette.background.default}>
-          My
-        </Typography>
       </Stack>
       <AppBar
         id="portfolio"
@@ -57,13 +54,13 @@ export const Portfolio = () => {
       >
         <Typography
           variant="h1"
-          color={theme.palette.background.default}
+          color={theme.palette.text.primary}
           sx={{
-            fontSize: { xs: "4rem", sm: "6rem" },
+            fontSize: { xs: "4rem", sm: "5rem" },
             textAlign: "center",
           }}
         >
-          Portfolio
+         My  Portfolio
         </Typography>
       </AppBar>
       <Grid2 container justifyContent={"center"} p={5} spacing={10}>
@@ -87,11 +84,11 @@ export const Portfolio = () => {
                 <Typography
                   gutterBottom
                   variant="h3"
-                  sx={{ color: "text.secondary" }}
+                  sx={{ color: "text.primary" }}
                 >
                   {card.title}
                 </Typography>
-                <Typography variant="h6" sx={{ color: "text.secondary" }}>
+                <Typography variant="h6" sx={{ color: "text.primary" }}>
                   {card.description}
                 </Typography>
               </CardContent>

@@ -1,25 +1,24 @@
 import { createTheme } from "@mui/material/styles";
 
-const primaryColor = "#9C528B";
-const secondPrimaryColor = "#3AAFA9";
-const secondDarkPrimaryColor = "#377572";
+const secondPrimaryColor = '#E07A5F';
+const secondDarkPrimaryColor = "#9DC08B";
 const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: primaryColor, // Ana renk
+      main: secondPrimaryColor, // Ana renk
     },
 
     secondary: {
-      main: secondPrimaryColor, // Soluk kırmızı tonunda ikinci renk
+      main: secondPrimaryColor, 
     },
     background: {
-      default: "#eeeeee", // Hafif krem arka plan
-      paper: primaryColor, // Kartlar ve modallar için yumuşak gri arka plan
+      default: "#eeeeee", 
+      paper: secondDarkPrimaryColor, 
     },
     text: {
-      primary: "#3d3d3d", // Koyu gri metin rengi
-      secondary: "#eee", // Daha açık gri
+      primary: "#3d3d3d",
+      secondary: "#eeeeee", 
     },
     success: { main: "#4caf50" },
     error: { main: "#f44336" },
@@ -27,26 +26,27 @@ const lightTheme = createTheme({
     info: { main: "#2196f3" },
   },
   typography: {
-    fontFamily: "'Delius', 'Slabo 27px', sans-serif",
+    fontFamily: ' "Indie Flower", cursive',
     button: { textTransform: "none" },
   },
+  
 });
 
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#7D5BA6",
+      main: "#16A085",
     },
     secondary: {
       main: secondDarkPrimaryColor,
     },
     background: {
-      default: "#121212", // Koyu arka plan
-      paper: "#7D5BA6", // Daha yumuşak koyu gri
+      default: '#2E2E2E', // Koyu arka plan
+      paper: "#16A085", // Daha yumuşak koyu gri
     },
     text: {
-      primary: "#ffffff", // Beyaz metin
+      primary: "#eeeeee", // Beyaz metin
       secondary: "#222", // Açık gri metin
     },
     success: { main: "#66bb6a" },
@@ -55,7 +55,7 @@ const darkTheme = createTheme({
     info: { main: "#64b5f6" },
   },
   typography: {
-    fontFamily: "'Delius', 'Slabo 27px', sans-serif",
+    fontFamily: "'Poppins', sans-serif",
     button: { textTransform: "none" },
   },
 });

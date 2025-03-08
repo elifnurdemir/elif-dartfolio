@@ -19,7 +19,7 @@ export const Journey = () => {
         }}
         elevation={0}
       >
-        <Typography variant="h2" color={theme.palette.text.secondary}>
+        <Typography variant="h2" color={theme.palette.text.primary}>
           My Journey
         </Typography>
       </AppBar>

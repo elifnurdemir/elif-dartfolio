@@ -26,8 +26,8 @@ export const Phone = () => {
         }}
         direction={"column"}
         alignItems={"center"}
-        pt={15}
-        gap={5}
+        pt={20}
+        gap={8}
       >
         <Avatar
           alt="Elifnur Demir"
