@@ -23,8 +23,8 @@ export const SocialMediaPhone = ({ children }: Props) => {
           sx={{
             position: "absolute",
             backgroundImage: `url(${withNotch}) !important`,
-            width: "583px",
-            height: "899px",
+            width: "450px",
+            height: "900px",
             top: 0,
             left: 0,
             zIndex: 5,

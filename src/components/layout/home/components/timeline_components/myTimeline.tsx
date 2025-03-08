@@ -15,7 +15,7 @@ export const myTimeline: {
     position: "left",
     date: "2000",
   },
-  {
+    {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
