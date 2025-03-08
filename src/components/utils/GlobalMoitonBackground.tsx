@@ -14,7 +14,7 @@ export default function GlobalMotionBackground() {
       style={{
         position: "fixed",
         top: 0,
-        left: 0,
+        left: "50%",
         width: "100vw",
         height: "100vh",
         zIndex: -1,
@@ -22,14 +22,6 @@ export default function GlobalMotionBackground() {
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         {/* Arkadaki Sabit Yol (Başlangıçta Görünmez) */}
-        <motion.path
-          d={pathData}
-          fill="transparent"
-          strokeWidth="8"
-          stroke="transparent"
-          strokeLinecap="round"
-          opacity={0.2} // Hafif görünür hale getirdik
-        />
 
         {/* Üzerinden Geçtiği Yol */}
         <motion.path
@@ -38,7 +30,7 @@ export default function GlobalMotionBackground() {
           strokeWidth="50"
           stroke={theme.palette.primary.main} // Hareket eden yolun rengi
           strokeLinecap="round"
-          strokeDasharray="100%" // Kesik çizgiyi tam bir hat olarak ayarla
+          strokeDasharray="115%" // Kesik çizgiyi tam bir hat olarak ayarla
           style={{ strokeDashoffset: dashOffset }}
         />
       </svg>
@@ -49,4 +41,4 @@ export default function GlobalMotionBackground() {
 /**
  * ==============   Path Verisi   ================
  */
-const pathData = `M 200 0 C 50 100 50 300 200 400 C 350 500 400 700 600 800`;
+const pathData = `m 50 0 c 50 350 576 -136 576 364 c -7 227 -75 273 -261 273 c -703 -17 19 331 -12 991`;
