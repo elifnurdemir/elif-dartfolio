@@ -6,7 +6,13 @@ import flutter from "../../assets/flutter.svg";
 import kotlin from "../../assets/kotlin.svg";
 import swift from "../../assets/swift.svg";
 import cuteProfile from "../../assets/CuteProfile.png";
-export const Phone = () => {
+import { LightSwitch } from "./LightSwitch";
+type LigthSwitchProps = {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
   const theme = useTheme();
   return (
     <Box sx={{ position: "relative" }}>
@@ -38,6 +44,7 @@ export const Phone = () => {
             border: `5px solid ${theme.palette.primary.main}`,
           }}
         />
+        <LightSwitch setDarkMode={setDarkMode} darkMode={darkMode} />
         <Stack
           direction={"row"}
           alignItems={"center"}

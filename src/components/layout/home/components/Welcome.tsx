@@ -1,7 +1,12 @@
 import { Box, Grid2, Stack, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Phone } from "../../../interface/Phone";
-export const Welcome = () => {
+
+type LigthSwitchProps = {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+export const Welcome = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
   const theme = useTheme();
   const backgroundColor = encodeURIComponent(theme.palette.primary.main);
   return (
@@ -56,7 +61,7 @@ export const Welcome = () => {
           alignItems={"center"}
           justifyContent={"flex-end"}
         >
-          <Phone />
+          <Phone setDarkMode={setDarkMode} darkMode={darkMode} />
         </Grid2>
       </Grid2>
     </Box>

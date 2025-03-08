@@ -1,4 +1,3 @@
-import { ResponsiveAppBar } from "./components/layout/home/components/Appbar";
 import { ThemeProvider, CssBaseline, Box, Fab } from "@mui/material";
 import { lightTheme, darkTheme } from "./theme";
 import { useState, useMemo } from "react";
@@ -43,12 +42,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box>
-        <ResponsiveAppBar
-          scrolled={scrolled}
-          setDarkMode={setDarkMode}
-          darkMode={darkMode}
-        />
-        <Welcome />
+        <Welcome setDarkMode={setDarkMode} darkMode={darkMode} />
         <AboutMe />
         <Journey />
         <Counts ref={componentRef} />
