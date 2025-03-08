@@ -47,7 +47,7 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
   source,
 }) => {
   return (
-    <Grid2 size={3}>
+    <Grid2 size={12 / 5}>
       <Stack
         direction={"column"}
         alignItems={"center"}
@@ -204,6 +204,12 @@ export const SocialMedia = () => {
                   link="https://linkedin.com/in/elifnurdemir-elifnur-demir"
                   source={LinkedIn}
                 />
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
                 <Grid2 size={12} sx={{ visibility: "hidden" }}>
                   space
                 </Grid2>

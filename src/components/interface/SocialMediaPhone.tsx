@@ -15,7 +15,7 @@ export const SocialMediaPhone = ({ children }: Props) => {
           width: "450px",
           height: "920px",
           zIndex: 5,
-
+          cursor: "pointer",
           p: 2,
         }}
       >
