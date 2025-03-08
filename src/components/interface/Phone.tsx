@@ -31,7 +31,7 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
           height: "775px",
           width: "389px",
           overflow: "hidden",
-          filter: "drop-shadow(50px 0px 30px rgba(0, 0, 0, 0.5))",
+          filter: "drop-shadow(-50px 0px 30px rgba(0, 0, 0, 0.5))",
         }}
         direction={"column"}
         alignItems={"center"}
