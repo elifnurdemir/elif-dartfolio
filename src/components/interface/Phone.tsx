@@ -15,13 +15,16 @@ type LigthSwitchProps = {
 export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
   const theme = useTheme();
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative", height: "775px", width: "389px" }}>
       <Stack
         component={motion.div}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         sx={{
+          position: "absolute",
+          top: "15%",
+          left: 0,
           backgroundImage: `url(${PhoneImg}) !important`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
