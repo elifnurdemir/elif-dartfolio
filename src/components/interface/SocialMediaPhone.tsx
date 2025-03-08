@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { ReactNode } from "react";
-import withoutNotch from "../../assets/withoutNotch.png";
 import withNotch from "../../assets/withNotch.png";
 import cuteElif from "../../assets/CuteElif.png";
 type Props = {
@@ -12,11 +11,12 @@ export const SocialMediaPhone = ({ children }: Props) => {
     <Box position={"relative"}>
       <Box //PHONE
         sx={{
-          backgroundImage: `url(${withoutNotch})`,
-          width: "583px",
-          height: "899px",
-          padding: "32px 246px 300px 70px",
+          backgroundImage: `url(${withNotch})`,
+          width: "450px",
+          height: "920px",
           zIndex: 5,
+
+          p: 2,
         }}
       >
         <Box //Notch
@@ -24,7 +24,7 @@ export const SocialMediaPhone = ({ children }: Props) => {
             position: "absolute",
             backgroundImage: `url(${withNotch}) !important`,
             width: "450px",
-            height: "900px",
+            height: "920px",
             top: 0,
             left: 0,
             zIndex: 5,
@@ -38,9 +38,11 @@ export const SocialMediaPhone = ({ children }: Props) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            height: "568px",
-            width: "266px",
-            borderRadius: "30px",
+            height: "888px",
+            width: "418px",
+            borderRadius: "80px",
+            py: 3,
+            px: 3,
           }}
         >
           {children}

@@ -53,10 +53,10 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <IconButton size="small" onClick={() => window.open(link, "_blank")}>
+        <IconButton onClick={() => window.open(link, "_blank")}>
           <img
             src={source}
-            height={"38px"}
+            height={"48px"}
             alt={label}
             style={{
               objectFit: "contain",
@@ -68,7 +68,7 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
         </IconButton>
         <Typography
           sx={{
-            fontSize: "10px",
+            fontSize: "body2",
             color: "white",
             textShadow:
               "1px 1px 0px #333, -1px -1px 0px #333, -1px 1px 0px #333, 1px -1px 0px #333",
@@ -156,7 +156,7 @@ export const SocialMedia = () => {
             pagination={pagination}
             modules={[Pagination]}
           >
-            <SwiperSlide style={{ height: "488px", width: "266px" }}>
+            <SwiperSlide style={{ height: "758px" }}>
               <Grid2 container sx={{ padding: 2 }} spacing={3}>
                 <Grid2 size={12}>
                   <Stack
@@ -214,12 +214,25 @@ export const SocialMedia = () => {
                 <Grid2 size={12} sx={{ visibility: "hidden" }}>
                   space
                 </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+                <Grid2 size={12} sx={{ visibility: "hidden" }}>
+                  space
+                </Grid2>
+
                 <MusicPlayer />
               </Grid2>
             </SwiperSlide>
             <SwiperSlide
               style={{
-                height: "488px",
+                height: "708px",
                 width: "266px",
               }}
             >
@@ -260,23 +273,23 @@ export const SocialMedia = () => {
             spacing={1}
           >
             <IconButton>
-              <img src={Phone} height={"38px"} />
+              <img src={Phone} height={"48px"} />
             </IconButton>
             <IconButton
               onClick={() =>
                 (window.location.href = "mailto:elifdemircontact@gmail.com")
               }
             >
-              <img src={Mail} height={"38px"} />
+              <img src={Mail} height={"48px"} />
             </IconButton>
             <IconButton
               onClick={() => window.open("https://www.google.com", "_blank")}
             >
-              <img src={Browser} height={"38px"} alt="Browser" />
+              <img src={Browser} height={"48px"} alt="Browser" />
             </IconButton>
 
             <IconButton>
-              <img src={Camera} height={"38px"} />
+              <img src={Camera} height={"48px"} />
             </IconButton>
           </Stack>
         </SocialMediaPhone>
