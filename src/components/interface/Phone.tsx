@@ -23,7 +23,7 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         sx={{
           position: "absolute",
-          top: "15%",
+          top: "25%",
           height: "775px",
           width: "350px",
           overflow: "hidden",
