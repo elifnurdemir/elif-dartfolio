@@ -84,7 +84,6 @@ const SocialMediaButton: React.FC<SocialMediaButtonProps> = ({
 
 export const SocialMedia = () => {
   const theme = useTheme();
-  const sliderRef = useRef<HTMLDivElement>(null);
 
   const pagination = {
     dynamicBullets: true,
@@ -98,45 +97,37 @@ export const SocialMedia = () => {
   const currentDate = new Date();
   const hours = currentDate.getHours();
   const minutes = currentDate.getMinutes();
-
+  const formattedHours = hours < 10 ? "0" + hours : hours;
+  const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
   return (
-    <Grid2
-      pt={5}
-      pl={5}
-      container
-      justifyContent={"space-between"}
-      ref={sliderRef}
-    >
-      <Grid2
-        size={{ xs: 12, sm: 6 }}
-        component={Stack}
+    <Stack alignItems={"center"} justifyContent={"center"} spacing={10} pt={10}>
+      <Box
         sx={{
           backgroundColor: theme.palette.background.default,
         }}
       >
-        <Typography variant="h2">Here is My Accounts</Typography>
-        <Typography variant="h3">Follow Me! 😍</Typography>
-      </Grid2>
-      <Grid2
-        size={{ xs: 12, sm: 6 }}
-        component={Stack}
-        justifyContent={"flex-end"}
-        alignItems={"flex-end"}
-      >
+        <Typography variant="h2" textAlign={"center"} gutterBottom>
+          Here is My Accounts
+        </Typography>
+        <Typography variant="h3" textAlign={"center"}>
+          Follow Me! 😍
+        </Typography>
+      </Box>
+      <Box>
         <SocialMediaPhone>
           <Stack
             direction={"row"}
             alignItems={"center"}
             justifyContent={"space-between"}
-            sx={{ height: "20px", px: "14px" }}
+            sx={{ height: "20px", px: 4 }}
           >
             <Stack
               direction={"row"}
               alignItems={"center"}
               justifyContent={"center"}
             >
-              <Typography sx={{ fontSize: 12 }} color="white">
-                {hours}:{minutes}
+              <Typography variant="body1" color="white">
+                {formattedHours}:{formattedMinutes}
               </Typography>
             </Stack>
             <Stack
@@ -233,7 +224,6 @@ export const SocialMedia = () => {
             <SwiperSlide
               style={{
                 height: "708px",
-                width: "266px",
               }}
             >
               <Grid2 container sx={{ padding: 2 }} spacing={3}>
@@ -270,7 +260,7 @@ export const SocialMedia = () => {
             alignItems={"center"}
             height={"50px"}
             justifyContent={"center"}
-            spacing={1}
+            spacing={2}
           >
             <IconButton>
               <img src={Phone} height={"48px"} />
@@ -293,7 +283,7 @@ export const SocialMedia = () => {
             </IconButton>
           </Stack>
         </SocialMediaPhone>
-      </Grid2>
-    </Grid2>
+      </Box>
+    </Stack>
   );
 };

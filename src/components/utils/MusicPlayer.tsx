@@ -85,10 +85,10 @@ const MusicPlayer: React.FC = () => {
         }}
       >
         <CardContent>
-          <Typography sx={{ fontSize: "12px", color: "white" }}>
+          <Typography sx={{ color: "white" }}>
             {songs[currentSongIndex].title}
           </Typography>
-          <Typography sx={{ fontSize: "12px", color: "#888" }}>
+          <Typography sx={{ color: "#888" }}>
             {songs[currentSongIndex].artist}
           </Typography>
         </CardContent>
@@ -100,23 +100,23 @@ const MusicPlayer: React.FC = () => {
           }}
         >
           <IconButton aria-label="previous" onClick={handlePrevious}>
-            <SkipPrevious fontSize="small" sx={{ color: "white" }} />
+            <SkipPrevious fontSize="large" sx={{ color: "white" }} />
           </IconButton>
           <IconButton aria-label="play/pause" onClick={handlePlayPause}>
             {isPlaying ? (
-              <Pause sx={{ color: "white" }} />
+              <Pause fontSize="large" sx={{ color: "white" }} />
             ) : (
-              <PlayArrow sx={{ color: "white" }} />
+              <PlayArrow fontSize="large" sx={{ color: "white" }} />
             )}
           </IconButton>
           <IconButton aria-label="next" onClick={handleNext}>
-            <SkipNext fontSize="small" sx={{ color: "white" }} />
+            <SkipNext fontSize="large" sx={{ color: "white" }} />
           </IconButton>
         </Box>
       </Box>
       <CardMedia
         component="img"
-        sx={{ width: 107 }}
+        sx={{ width: 131 }}
         image={songs[currentSongIndex].album}
         alt="Live from space album cover"
       />

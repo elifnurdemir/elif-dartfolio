@@ -42,7 +42,6 @@ export const SocialMediaPhone = ({ children }: Props) => {
             width: "418px",
             borderRadius: "80px",
             py: 3,
-            px: 3,
           }}
         >
           {children}
