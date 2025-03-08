@@ -9,80 +9,147 @@ export const myTimeline: {
   {
     content: (
       <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-        Started Learning Programming
+        Born! 👶🎂
       </Typography>
     ),
     position: "left",
-    date: "2024 Ocak",
+    date: "2000",
   },
   {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Completed Frontend Bootcamp
+          Started Studying Opticianry 👓📖
         </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
-          React, JavaScript, HTML, CSS
+        <Typography variant="body1" sx={{ fontWeight: "600" }}>
+          Kırklareli University
         </Typography>
       </Box>
     ),
     position: "right",
-    date: "2024 Şubat",
+    date: "October 2018",
   },
   {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Mobile Development Journey
+          Erasmus+ Experience ✈️🌍
         </Typography>
         <Typography variant="body1" sx={{ fontWeight: "500" }}>
-          Started learning React Native & Flutter
+          Explored new cultures and opportunities
         </Typography>
       </Box>
     ),
     position: "left",
-    date: "2024 Mart",
+    date: "April 2017",
   },
   {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Google Associate Android Developer Certificate
-        </Typography>
-        <Typography variant="body1" sx={{ fontWeight: "500" }}>
-          Validated skills in Android app development
+          Graduated from Opticianry 🎓👀
         </Typography>
       </Box>
     ),
     position: "right",
-    date: "2024 Nisan",
+    date: "March 2021",
   },
   {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Completed Full-Stack Developer Course
+          Started Studying Computer Programming 💻🚀
         </Typography>
         <Typography variant="body1" sx={{ fontWeight: "500" }}>
-          Backend with Node.js & Express
+          Istanbul University - Associate Degree
         </Typography>
       </Box>
     ),
     position: "left",
-    date: "2024 Mayıs",
+    date: "October 2023",
   },
   {
     content: (
       <Box>
         <Typography variant="h4" sx={{ fontWeight: "bold" }}>
-          Achieved AWS Certified Developer
+          Earned Cybersecurity Fundamentals Certificate 🔒🛡️
         </Typography>
         <Typography variant="body1" sx={{ fontWeight: "500" }}>
-          Cloud computing & serverless applications
+          IBM & Kodluyoruz
         </Typography>
       </Box>
     ),
     position: "right",
-    date: "2024 Haziran",
+    date: "November 2024",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Completed Agile Project Management Course 📊📅
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          HP LIFE
+        </Typography>
+      </Box>
+    ),
+    position: "left",
+    date: "October 2024",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Became an Expert in Emerging Tech 🚀🤖
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          IBM Explore Emerging Tech Badge
+        </Typography>
+      </Box>
+    ),
+    position: "right",
+    date: "October 2024",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Earned CyberStart Certificate 🕵️‍♂️💻
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          IBM & Kodluyoruz
+        </Typography>
+      </Box>
+    ),
+    position: "left",
+    date: "January 2025",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Mobile App Development Workshop 📱🔥
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          Hi-Kod 2.0
+        </Typography>
+      </Box>
+    ),
+    position: "right",
+    date: "February 2025",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+          Expected Graduation 🎓🎉
+        </Typography>
+        <Typography variant="body1" sx={{ fontWeight: "500" }}>
+          Istanbul University - Computer Programming
+        </Typography>
+      </Box>
+    ),
+    position: "left",
+    date: "June 2025",
   },
 ];
