@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Grid2,
   IconButton,
   Stack,
@@ -148,14 +149,19 @@ export const SocialMedia = () => {
           >
             <SwiperSlide style={{ height: "758px" }}>
               <Grid2 container sx={{ padding: 2 }} spacing={3}>
-                <Grid2 size={12}>
+                <Grid2 size={12} mx={1} mt={1}>
                   <Stack
                     direction={"row"}
                     alignItems={"center"}
                     justifyContent={"center"}
+                    component={Button}
+                    onClick={() =>
+                      window.open("https://www.google.com", "_blank")
+                    }
+                    fullWidth
                     sx={{
                       backgroundColor: "white",
-                      height: "36px",
+                      height: "42px",
                       borderRadius: "100px",
                     }}
                   >
@@ -198,9 +204,6 @@ export const SocialMedia = () => {
                   link="https://linkedin.com/in/elifnurdemir-elifnur-demir"
                   source={LinkedIn}
                 />
-                <Grid2 size={12} sx={{ visibility: "hidden" }}>
-                  space
-                </Grid2>
                 <Grid2 size={12} sx={{ visibility: "hidden" }}>
                   space
                 </Grid2>

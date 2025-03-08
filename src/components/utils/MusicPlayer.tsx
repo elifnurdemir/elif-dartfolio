@@ -82,13 +82,14 @@ const MusicPlayer: React.FC = () => {
           alignItems: "stretch",
           backgroundColor: "#222",
           flex: 1,
+          gap: 3,
         }}
       >
         <CardContent>
-          <Typography sx={{ color: "white" }}>
+          <Typography variant="h5" sx={{ color: "white" }}>
             {songs[currentSongIndex].title}
           </Typography>
-          <Typography sx={{ color: "#888" }}>
+          <Typography variant="h6" sx={{ color: "#888" }}>
             {songs[currentSongIndex].artist}
           </Typography>
         </CardContent>
@@ -97,6 +98,7 @@ const MusicPlayer: React.FC = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            gap: 2,
           }}
         >
           <IconButton aria-label="previous" onClick={handlePrevious}>
@@ -116,7 +118,7 @@ const MusicPlayer: React.FC = () => {
       </Box>
       <CardMedia
         component="img"
-        sx={{ width: 131 }}
+        sx={{ width: 171 }}
         image={songs[currentSongIndex].album}
         alt="Live from space album cover"
       />
