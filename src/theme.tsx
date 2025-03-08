@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-const secondPrimaryColor = '#E07A5F';
+const secondPrimaryColor = "#E07A5F";
 const secondDarkPrimaryColor = "#C9D99E";
 const lightTheme = createTheme({
   palette: {
@@ -10,16 +10,15 @@ const lightTheme = createTheme({
     },
 
     secondary: {
-      main: '#669B7C',
-      
+      main: "#669B7C",
     },
     background: {
-      default: "#eeeeee", 
-      paper: secondDarkPrimaryColor, 
+      default: "#eeeeee",
+      paper: secondDarkPrimaryColor,
     },
     text: {
       primary: "#3d3d3d",
-      secondary: "#eeeeee", 
+      secondary: "#eeeeee",
     },
     success: { main: "#4caf50" },
     error: { main: "#f44336" },
@@ -30,7 +29,6 @@ const lightTheme = createTheme({
     fontFamily: ' "Indie Flower", cursive',
     button: { textTransform: "none" },
   },
-  
 });
 
 const darkTheme = createTheme({
@@ -43,7 +41,7 @@ const darkTheme = createTheme({
       main: secondDarkPrimaryColor,
     },
     background: {
-      default: '#2E2E2E', // Koyu arka plan
+      default: "#2E2E2E", // Koyu arka plan
       paper: "#16A085", // Daha yumuşak koyu gri
     },
     text: {
@@ -56,7 +54,7 @@ const darkTheme = createTheme({
     info: { main: "#64b5f6" },
   },
   typography: {
-    fontFamily: "'Poppins', sans-serif",
+    fontFamily: ' "Indie Flower", cursive',
     button: { textTransform: "none" },
   },
 });

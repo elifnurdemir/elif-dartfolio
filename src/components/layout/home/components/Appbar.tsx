@@ -80,7 +80,7 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
             }}
           />
           {/* Removed Elifnur Demir */}
-          
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -130,15 +130,13 @@ export const ResponsiveAppBar: React.FC<ResponsiveAppBarProps> = ({
                   scrollToSection(page.toLowerCase().replace(" ", "-"))
                 }
                 sx={{
-                  my: 2,
-                  color: "#3d3d3d",
+                  m: 1,
                   display: "block",
-                  fontSize: "30px",
-                  fontWeight:'bold',
-                  marginX: 3, // Added margin for spacing
                 }}
               >
-                {page}
+                <Typography variant="h5" fontWeight={600} color="text.primary">
+                  {page}
+                </Typography>
               </Button>
             ))}
           </Box>
