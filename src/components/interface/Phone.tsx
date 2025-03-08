@@ -23,7 +23,7 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         sx={{
           position: "absolute",
-          top: "22%",
+          top: "15%",
           height: "775px",
           width: "350px",
           overflow: "hidden",
@@ -32,13 +32,13 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
             position: "absolute",
             top: 0,
             left: 0,
-            right: 0,
-            bottom: 0,
-            margin: 1,
+            width: "90%",
+            height: "88%",
             backdropFilter: "blur(10px)", // Blur efekti
             zIndex: 0, // Arkada kalmasını sağlıyoruz
             pointerEvents: "none",
-            borderRadius: "100px !important",
+            borderRadius: 7,
+            m: 2,
           },
           "&::after": {
             content: '""',
