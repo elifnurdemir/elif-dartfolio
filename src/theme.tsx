@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material/styles";
 
 const secondPrimaryColor = '#E07A5F';
-const secondDarkPrimaryColor = "#9DC08B";
+const secondDarkPrimaryColor = "#C9D99E";
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -10,7 +10,8 @@ const lightTheme = createTheme({
     },
 
     secondary: {
-      main: secondPrimaryColor, 
+      main: '#669B7C',
+      
     },
     background: {
       default: "#eeeeee", 
