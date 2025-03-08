@@ -23,7 +23,7 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         sx={{
           position: "absolute",
-          top: "15%",
+          top: "20%",
           left: 0,
           backgroundImage: `url(${PhoneImg}) !important`,
           backgroundRepeat: "no-repeat",
@@ -31,7 +31,7 @@ export const Phone = ({ darkMode, setDarkMode }: LigthSwitchProps) => {
           height: "775px",
           width: "389px",
           overflow: "hidden",
-          filter: "drop-shadow(-70px 0px 30px rgba(0, 0, 0, 0.5))",
+          filter: "drop-shadow(50px 0px 30px rgba(0, 0, 0, 0.5))",
         }}
         direction={"column"}
         alignItems={"center"}

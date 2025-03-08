@@ -12,9 +12,8 @@ export const AboutMe = () => {
         zIndex: 3,
         position: "relative",
         padding: { xs: "80px 16px", sm: "64px 32px" }, // Padding for mobile and larger screens
-        borderRadius:20 ,
+        borderRadius: 20,
         textAlign: "center",
-        boxShadow: "0px -5px 25px #00000055",
         margin: "0 auto", // Ensures the section is centered
         maxWidth: "1200px", // Limits the width to improve readability on large screens
       }}
@@ -38,8 +37,8 @@ export const AboutMe = () => {
           lineHeight: 1.75, // Increased line height for better readability
           maxWidth: "900px", // Limits the width of the text for better readability
           margin: "0 auto",
-          fontWeight:600,
-           // Centers the text
+          fontWeight: 600,
+          // Centers the text
         }}
       >
         Hi, I'm a frontend developer who loves building smooth, user-friendly
