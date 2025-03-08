@@ -5,7 +5,7 @@ import PhoneImg from "../../assets/YeniTelefon.png";
 import flutter from "../../assets/flutter.svg";
 import kotlin from "../../assets/kotlin.svg";
 import swift from "../../assets/swift.svg";
-import cuteProfile from "../../assets/CuteProfile.png";
+import cuteProfile from "/CuteProfile.png";
 import { LightSwitch } from "./LightSwitch";
 type LigthSwitchProps = {
   darkMode: boolean;

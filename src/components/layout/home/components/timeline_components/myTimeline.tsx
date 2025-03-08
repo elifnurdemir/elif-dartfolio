@@ -9,29 +9,11 @@ export const myTimeline: {
   {
     content: (
       <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
-        Born! 👶🎂
+        Born! 🎂
       </Typography>
     ),
     position: "left",
     date: "2000",
-  },
-  {
-    content: (
-      <Box>
-        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
-          Started Studying Opticianry 👓📖
-        </Typography>
-        <Typography
-          variant="body1"
-          sx={{ fontWeight: "600" }}
-          maxWidth={"20vw"}
-        >
-          Kırklareli University
-        </Typography>
-      </Box>
-    ),
-    position: "right",
-    date: "October 2018",
   },
   {
     content: (
@@ -50,6 +32,24 @@ export const myTimeline: {
     ),
     position: "left",
     date: "April 2017",
+  },
+  {
+    content: (
+      <Box>
+        <Typography variant="h4" sx={{ fontWeight: "bold" }} maxWidth={"20vw"}>
+          Started Studying Opticianry 👓📖
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{ fontWeight: "600" }}
+          maxWidth={"20vw"}
+        >
+          Kırklareli University
+        </Typography>
+      </Box>
+    ),
+    position: "right",
+    date: "October 2018",
   },
   {
     content: (
