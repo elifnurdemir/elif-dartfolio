@@ -48,7 +48,6 @@ function App() {
         <Journey />
         <Counts ref={componentRef} />
         <Contributions />
-
         <Portfolio />
         <SocialMedia />
       </Box>

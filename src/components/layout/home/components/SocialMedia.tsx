@@ -18,20 +18,20 @@ import {
   SignalWifi3Bar,
 } from "@mui/icons-material";
 import MusicPlayer from "../../../utils/MusicPlayer";
-import Browser from "../../../../assets/SocialMedia/browser.png";
-import Camera from "../../../../assets/SocialMedia/camera.png";
-import Mail from "../../../../assets/SocialMedia/mail.png";
-import Phone from "../../../../assets/SocialMedia/phone.png";
-import Behance from "../../../../assets/SocialMedia/Social=Behance,Style=Original.png";
-import Dribbble from "../../../../assets/SocialMedia/Social=Dribbble,Style=Original.png";
-import Github from "../../../../assets/SocialMedia/Social=Github,Style=Original.png";
-import Instagram from "../../../../assets/SocialMedia/Social=Instagram,Style=Original.png";
-import LinkedIn from "../../../../assets/SocialMedia/Social=LinkedIn,Style=Original.png";
-import Medium from "../../../../assets/SocialMedia/Social=Medium,Style=Original.png";
-import Pinterest from "../../../../assets/SocialMedia/Social=Pinterest,Style=Original.png";
-import Spotify from "../../../../assets/SocialMedia/Social=Spotify,Style=Original.png";
-import Telegram from "../../../../assets/SocialMedia/Social=Telegram,Style=Original.png";
-import YouTube from "../../../../assets/SocialMedia/Social=YouTube,Style=Original.png";
+import Browser from "../../../../assets/SocialMedia/contact.png";
+import Camera from "../../../../assets/SocialMedia/safari.png";
+import Mail from "../../../../assets/SocialMedia/messages.png";
+import Phone from "../../../../assets/SocialMedia/apple.png";
+import Behance from "../../../../assets/SocialMedia/behance.png";
+import Dribbble from "../../../../assets/SocialMedia/dribble.png";
+import Github from "../../../../assets/SocialMedia/github.png";
+import Instagram from "../../../../assets/SocialMedia/instagram.png";
+import LinkedIn from "../../../../assets/SocialMedia/linkedin.png";
+import Medium from "../../../../assets/SocialMedia/medium.png";
+import Pinterest from "../../../../assets/SocialMedia/pinterest.png";
+import Spotify from "../../../../assets/SocialMedia/spotify.png";
+import Telegram from "../../../../assets/SocialMedia/telegram.png";
+import YouTube from "../../../../assets/SocialMedia/youtube.png";
 import Google from "../../../../assets/google.png";
 import GoogleMic from "../../../../assets/googlemic.png";
 
