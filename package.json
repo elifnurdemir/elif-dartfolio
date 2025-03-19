@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://necatimertmetin.github.io/elif-dartfolio",
+  "homepage": "elifnurdemir.github.io/elif-dartfolio",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
